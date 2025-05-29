@@ -14,23 +14,23 @@ Before you start, make sure you have the following installed:
 
 <h4>Install dependencies:</h4>
 
-npm install
+<pre>npm install</pre>
 
 <h2>Dependencies</h2>
 The project includes the following dependencies:
 
-@eslint/js
-@faker-js/faker
-@playwright/test
-@types/node
-eslint
-eslint-config-prettier
-eslint-plugin-playwright
-prettier
-typescript
-typescript-eslint
-dotenv
-tslog
+<li><code>@eslint/js</code></li>
+<li><code>@faker-js/faker</code></li>
+<li><code>@playwright/test</code></li>
+<li><code>@types/node</code></li>
+<li><code>eslint</code></li>
+<li><code>eslint-config-prettier</code></li>
+<li><code>eslint-plugin-playwright</code></li>
+<li><code>prettier</code></li>
+<li><code>typescript</code></li>
+<li><code>typescript-eslint</code></li>
+<li><code>dotenv</code></li>
+<li><code>tslog</code></li>
 
 <h2>Scripts</h2>
 The package.json file includes several scripts to help you run and manage your tests:
