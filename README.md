@@ -6,8 +6,9 @@ It includes all necessary configurations and dependencies to get started with au
 <h2>Prerequisites</h2>
 Before you start, make sure you have the following installed:
 
-<a href="https://nodejs.org" rel="nofollow">Node.js</a> (v20 or later)
-<a href="https://www.npmjs.com/" rel="nofollow">npm</a>
+<li><a href="https://nodejs.org" rel="nofollow">Node.js</a> (v20 or later)</li>
+
+<li><a href="https://www.npmjs.com/" rel="nofollow">npm</a></li>
 
 <h2>Setup</h2>
 
