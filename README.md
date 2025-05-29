@@ -49,7 +49,7 @@ To run the tests, you can use the following commands:
 <li><p dir="auto">Install dependencies:</p>
 <pre>npm install</pre></li>
 <li><p dir="auto">Run all tests:</p>
-<pre>npm run <span class="pl-c1">test</span></pre></li>
+<pre>"npm run "<span class="pl-c1">test</span></pre></li>
 
 <li><p dir="auto">Run tests in headed mode:</p>
 <pre>npm run test:headed</pre></li>
