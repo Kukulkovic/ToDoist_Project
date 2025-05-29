@@ -1,0 +1,21 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "eslint.useFlatConfig": true,
+  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.trailingComma": "all",
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
