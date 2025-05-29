@@ -76,5 +76,7 @@ The project is configured to use Prettier and ESLint for code formatting and lin
 <li><Code>.prettierignore</Code>: Files and directories to ignore for Prettier.</li>
 <li><Code>.gitignore</Code>: Files and directories to ignore for Git.</li>
 
-<h2>License</h2>
-This project is licensed under the ISC License.
+<h2>Reminder</h2>
+Remember to create <code>.env</code> file and populate it with credentials as following
+USERNAME={your-user-name}
+PASSWORD={your-password}
