@@ -33,22 +33,23 @@ The project includes the following dependencies:
 <li><code>tslog</code></li>
 
 <h2>Scripts</h2>
-The package.json file includes several scripts to help you run and manage your tests:
+The <code>package.json</code> file includes several scripts to help you run and manage your tests:
 
-pretest: Runs TypeScript compiler without emitting files and lints the code using ESLint.
-test: Runs all Playwright tests.
-test:headed: Runs all Playwright tests in headed mode.
-test:debug: Runs all Playwright tests in debug mode.
-test:ui: Opens the Playwright test runner UI.
-test:nolint: Runs all Playwright tests without linting.
-show-report: Opens the Playwright test report.
+<li><code>pretest:</code></li> Runs TypeScript compiler without emitting files and lints the code using ESLint.
+<li><code>test:</code></li> Runs all Playwright tests.
+<li><code>test:headed:</code></li> Runs all Playwright tests in headed mode.
+<li><code>test:debug:</code></li> Runs all Playwright tests in debug mode.
+<li><code>test:ui:</code></li> Opens the Playwright test runner UI.
+<li><code>test:nolint:</code></li> Runs all Playwright tests without linting.
+<li><code>show-report:</code></li> Opens the Playwright test report.
 
 <h2>Running Tests</h2>
 To run the tests, you can use the following commands:
+<ol dir="auto">
+<li> ::master
+<p dir="auto">Install dependencies:</p>
 
-<h4>Install dependencies:</h4>
-
-npm install
+<pre>npm install</pre></li>
 
 Run all tests:
 
