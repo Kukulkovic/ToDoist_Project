@@ -46,29 +46,26 @@ The <code>package.json</code> file includes several scripts to help you run and 
 <h2>Running Tests</h2>
 To run the tests, you can use the following commands:
 <ol dir="auto">
-<li> ::master
-<p dir="auto">Install dependencies:</p>
-
+<li><p dir="auto">Install dependencies:</p>
 <pre>npm install</pre></li>
+<li><p dir="auto">Run all tests:</p>
+<pre>npm run test</pre></li>
 
-Run all tests:
+<li><p dir="auto">Run tests in headed mode:</p>
+<pre>npm run test:headed</pre></li>
 
-npm run test
-Run tests in headed mode:
+<li><p dir="auto">Run tests in debug mode:</p>
+<pre>npm run test:debug</pre></li>
 
-npm run test:headed
-Run tests in debug mode:
+<li><p dir="auto">Open the Playwright test runner UI:</p>
+<pre>npm run test:ui</pre></li>
 
-npm run test:debug
-Open the Playwright test runner UI:
+<li><p dir="auto">Run tests without linting:</p>
+<pre>npm run test:nolint</pre></li>
 
-npm run test:ui
-Run tests without linting:
+<li><p dir="auto">Show the Playwright test report:</p>
+<pre>npm run show-report</pre></li>
 
-npm run test:nolint
-Show the Playwright test report:
-
-npm run show-report
 <h2>Configuration</h2>
 The project is configured to use Prettier and ESLint for code formatting and linting. The configuration files are located in the <code>.vscode</code> directory and the root of the project:
 
