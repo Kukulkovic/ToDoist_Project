@@ -70,11 +70,11 @@ To run the tests, you can use the following commands:
 <h2>Configuration</h2>
 The project is configured to use Prettier and ESLint for code formatting and linting. The configuration files are located in the <code>.vscode</code> directory and the root of the project:
 
-<li><Code>settings.json:</Code> Contains VS Code settings for auto-saving, formatting, and linting.</li>
-<li><Code>extensions.json:</Code> Recommends extensions for VS Code.</li>
-<li><Code>tsconfig.json:</Code> TypeScript configuration file.</li>
-<li><Code>.prettierignore:</Code> Files and directories to ignore for Prettier.</li>
-<li><Code>.gitignore:</Code> Files and directories to ignore for Git.</li>
+<li><Code>settings.json</Code>: Contains VS Code settings for auto-saving, formatting, and linting.</li>
+<li><Code>extensions.json</Code>: Recommends extensions for VS Code.</li>
+<li><Code>tsconfig.json</Code>: TypeScript configuration file.</li>
+<li><Code>.prettierignore</Code>: Files and directories to ignore for Prettier.</li>
+<li><Code>.gitignore</Code>: Files and directories to ignore for Git.</li>
 
 <h2>License</h2>
 This project is licensed under the ISC License.
