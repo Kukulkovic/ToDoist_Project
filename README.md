@@ -65,6 +65,7 @@ To run the tests, you can use the following commands:
 
 <li><p dir="auto">Show the Playwright test report:</p>
 <pre>npm run show-report</pre></li>
+</ol>
 
 <h2>Configuration</h2>
 The project is configured to use Prettier and ESLint for code formatting and linting. The configuration files are located in the <code>.vscode</code> directory and the root of the project:
