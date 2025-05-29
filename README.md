@@ -3,20 +3,19 @@ This is a base setup for Playwright with TypeScript, designed to help you kickst
 
 It includes all necessary configurations and dependencies to get started with automated testing using Playwright and TypeScript, ensuring a seamless setup process and enabling you to focus on writing efficient and robust test cases right from the start.
 
-Prerequisites
+<h2>Prerequisites</h2>
 Before you start, make sure you have the following installed:
 
-Node.js (v20 or later)
-npm
-Setup
-Clone the repository:
+<a href="https://nodejs.org" rel="nofollow">Node.js</a> (v20 or later)
+<a href="https://www.npmjs.com/" rel="nofollow">npm</a>
 
-git clone https://github.com/pwtsdev/base-setup.git
-cd base-setup
-Install dependencies:
+<h2>Setup</h2>
+
+<h4>Install dependencies:</h4>
 
 npm install
-Dependencies
+
+<h2>Dependencies</h2>
 The project includes the following dependencies:
 
 @eslint/js
@@ -31,7 +30,8 @@ typescript
 typescript-eslint
 dotenv
 tslog
-Scripts
+
+<h2>Scripts</h2>
 The package.json file includes several scripts to help you run and manage your tests:
 
 pretest: Runs TypeScript compiler without emitting files and lints the code using ESLint.
@@ -41,12 +41,14 @@ test:debug: Runs all Playwright tests in debug mode.
 test:ui: Opens the Playwright test runner UI.
 test:nolint: Runs all Playwright tests without linting.
 show-report: Opens the Playwright test report.
-Running Tests
+
+<h2>Running Tests</h2>
 To run the tests, you can use the following commands:
 
-Install dependencies:
+<h4>Install dependencies:</h4>
 
 npm install
+
 Run all tests:
 
 npm run test
@@ -73,5 +75,6 @@ extensions.json: Recommends extensions for VS Code.
 tsconfig.json: TypeScript configuration file.
 .prettierignore: Files and directories to ignore for Prettier.
 .gitignore: Files and directories to ignore for Git.
-License
+
+<h2>License</h2>
 This project is licensed under the ISC License.
