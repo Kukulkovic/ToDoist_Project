@@ -1,6 +1,6 @@
 import { expect, test } from 'playwright/test';
 
-test('login to todoist account', { tag: ['@setup', '@wip'] }, async ({ page }) => {
+test('login to todoist account', { tag: ['@setup'] }, async ({ page }) => {
   await page.goto('login');
 
   const email = process.env.EMAIL
@@ -19,7 +19,7 @@ test('login to todoist account', { tag: ['@setup', '@wip'] }, async ({ page }) =
   await page.context().storageState({ path: 'tmp/login.json' });
 });
 
-test('should be logged in', { tag: ['@setup', '@wip'] }, async ({ page }) => {
+test('should be logged in', { tag: ['@setup'] }, async ({ page }) => {
   await page.goto('https://app.todoist.com/app/today');
 
   await expect(page).toHaveURL('https://app.todoist.com/app/today');
