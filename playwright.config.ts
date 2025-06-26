@@ -15,7 +15,7 @@ export default defineConfig({
   reporter: 'html',
 
   use: {
-    baseURL: 'https://app.todoist.com/',
+    baseURL: 'https://app.todoist.com',
     
     // baseURL: 'http://127.0.0.1:3000',
 

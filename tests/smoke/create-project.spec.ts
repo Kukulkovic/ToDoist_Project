@@ -1,16 +1,14 @@
 /* eslint-disable playwright/max-expects */
 import { expect, test } from '@playwright/test';
+import { HomePage } from '../../src/pages/HomePage';
 
 test('should create a new project', { tag: ['@project', '@wip'] }, async ({ page }) => {
-  await page.goto('https://app.todoist.com/app/today');
-  await expect(page).toHaveURL('https://app.todoist.com/app/today');
-  await expect(page).toHaveTitle(/Dziś/);
 
-  const leftMenu = page.getByTestId('app-sidebar-container');
+  const homePage = new HomePage(page);
 
-  // await leftMenu.getByText('Moje projekty').click()
-  await leftMenu.getByRole('button', { name: 'Menu Moje projekty ' }).click();
-  await page.getByLabel('Dodaj projekt').click();
+  await homePage.open();  // Navigate to the Todoist app
+
+  await homePage.leftPanel.openProjectsMenu();  // Open the projects menu
 
   const addProjectForm = page.getByTestId('modal-overlay').locator('form');
   await expect(addProjectForm).toBeVisible();
