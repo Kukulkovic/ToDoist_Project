@@ -1,3 +1,4 @@
+/* eslint-disable playwright/max-expects */
 import { expect, test } from '@playwright/test';
 
 test('should create a new project', { tag: ['@project', '@wip'] }, async ({ page }) => {
@@ -18,7 +19,7 @@ test('should create a new project', { tag: ['@project', '@wip'] }, async ({ page
 
   // const colorPicker = addProjectForm.locator('button[aria-labelledby="edit_project_modal_field_color_label"]');
   const colorPicker = addProjectForm.getByRole('combobox').first();
-  // await expect(colorPicker).toBeVisible();
+  await expect(colorPicker).toBeVisible();
   await colorPicker.click();
 
   // const projectColorSelector = page.locator('div .popper');
@@ -33,7 +34,6 @@ test('should create a new project', { tag: ['@project', '@wip'] }, async ({ page
   await expect(projectList.locator('li').first()).toHaveText('Test project');
 
   const projectTitle = page.getByTestId('large-header')
-  // eslint-disable-next-line playwright/max-expects
   await expect(projectTitle).toHaveText('Test project')
 
   await page.waitForTimeout(5000);
