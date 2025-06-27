@@ -1,7 +1,6 @@
 <h1>base-setup</h1>
 This is a base setup for Playwright with TypeScript, designed to help you kickstart your end-to-end testing journey with best practices and ease of use.
 <br>With this setup, you'll have a solid foundation to create fast, reliable, and maintainable automated tests, empowering you to deliver high-quality software efficiently.
-<br>
 <br>It includes all necessary configurations and dependencies to get started with automated testing using Playwright and TypeScript, ensuring a seamless setup process and enabling you to focus on writing efficient and robust test cases right from the start.
 
 <h2>Prerequisites</h2>
