@@ -13,6 +13,7 @@ export class LeftMenuComponent extends BaseComponent {
 
   // Locators
   private readonly leftMenuLocator = (): Locator => this.page.getByTestId('app-sidebar-container');
+  private readonly allProjects = (): Locator => this.page.locator('#projects_list li');
 
   // Actions
   async openProjectsMenu(): Promise<void> {
@@ -25,4 +26,12 @@ export class LeftMenuComponent extends BaseComponent {
     await expect(this.addProjectModal.addProjectForm()).toBeVisible();
     await this.addProjectModal.addNewProject(name, color);
   }
-}
+
+  async getAllProjectNames(): Promise<string[]> {
+    return await this.allProjects().locator('a div span').allInnerTexts()
+  }
+
+  getProjectByName(name: string): Locator {
+return this.allProjects().locator(`a div span:has-text("${name}")`).first();
+  } 
+ }
