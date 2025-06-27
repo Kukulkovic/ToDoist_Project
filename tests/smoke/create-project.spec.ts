@@ -1,13 +1,17 @@
 /* eslint-disable playwright/max-expects */
-import { expect, test } from '@playwright/test';
-import { HomePage } from '../../src/pages/HomePage';
 
-test('should create a new project', { tag: ['@project', '@wip'] }, async ({ page }) => {
-  const homePage = new HomePage(page);
+import { faker } from '@faker-js/faker';
+import { expect, test } from '../../src/fixtures/po.fixture';
+import { CreateProjectModel } from '../../src/models/create-project.model';
+
+test('should create a new project', { tag: ['@project', '@wip'] }, async ({ homePage}) => {
+  const project: CreateProjectModel = {
+    name: faker.lorem.word(2),
+    color: 'Łosoś',
+  };
 
   await homePage.open();
-  await homePage.leftPanel.addNewProject('Test project', 'Łosoś');
+  await homePage.leftPanel.addNewProject(project);
 
-  await expect(homePage.leftPanel.getProjectByName('Test project')).toBeVisible();
-  
+  await expect(homePage.leftPanel.getProjectByName(project.name)).toBeVisible();
 });
