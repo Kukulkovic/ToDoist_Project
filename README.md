@@ -78,5 +78,5 @@ The project is configured to use Prettier and ESLint for code formatting and lin
 
 <h2>Reminder</h2>
 Remember to create <code>.env</code> file and populate it with credentials as following
-USERNAME={your-user-name}
-PASSWORD={your-password}
+<br>USERNAME={your-user-name}
+<br>PASSWORD={your-password}
